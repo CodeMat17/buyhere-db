@@ -1,8 +1,10 @@
 'use strict';
+
 /**
- * Read the documentation (https://strapi.io/documentation/v3.x/concepts/controllers.html#core-controllers)
+ * Read the documentation (https://strapi.io/documentation/developer-docs/latest/concepts/controllers.html#core-controllers)
  * to customize this controller
  */
+
 const nodemailer = require('nodemailer')
 module.exports = {
     async create(ctx) {
@@ -14,12 +16,12 @@ module.exports = {
                 let transporter = nodemailer.createTransport({
                     service: "gmail",
                     auth: {
-                        user: process.env.USER_EMAIL,
-                        pass: process.env.USER_PASSWORD,
+                        user: 'matgold17@gmail.com',
+                        pass: 'censorship1',
                     }
                 })
                 const mailOptions = {
-                    from: 'BUY HERE stores',
+                    from: 'Unique essense stores',
                     to: `${Email}`,
                     subject: 'Welcome',
                     text: `Hey @${Email}, Thanks for subscribing to our NewsLetter`
