@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "portfolio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tools": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "current": {
+      "type": "boolean"
+    }
+  }
+}
